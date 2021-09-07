@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210907 22:56:43.464" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcase1" source="C:\Users\Dell\PycharmProjects\FlipkartExample\TestCases\testcase1.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.flipkart.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210907 22:56:43.745" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210907 22:56:43.745" endtime="20210907 22:56:53.565"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[3]/div/div/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210907 22:56:53.566" level="INFO">Clicking link 'xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[3]/div/div/div/a'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210907 22:56:54.789" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210907 22:56:54.672" endtime="20210907 22:56:54.789"/>
+</kw>
+<msg timestamp="20210907 22:56:54.804" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="_1_3w1N" href="/account/login?ret=/"&gt;...&lt;/a&gt; is not clickable at point (657, 27). Other element would receive the click: &lt;div class="_2hriZF _2rbIyg" tabindex="-1"&gt;...&lt;/div&gt;
+  (Session info: chrome=93.0.4577.63)
+</msg>
+<status status="FAIL" starttime="20210907 22:56:53.566" endtime="20210907 22:56:54.804"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=_2IX_2- VJZDxU</arg>
+<arg>8310109839</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210907 22:56:54.804" endtime="20210907 22:56:54.804"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=_2IX_2- _3mctLh VJZDxU</arg>
+<arg>chetlalli1110</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210907 22:56:54.804" endtime="20210907 22:56:54.804"/>
+</kw>
+<status status="FAIL" starttime="20210907 22:56:43.745" endtime="20210907 22:56:54.804">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="_1_3w1N" href="/account/login?ret=/"&gt;...&lt;/a&gt; is not clickable at point (657, 27). Other element would receive the click: &lt;div class="_2hriZF _2rbIyg" tabindex="-1"&gt;...&lt;/div&gt;
+  (Session info: chrome=93.0.4577.63)
+</status>
+</test>
+<test id="s1-t2" name="Library">
+<kw name="SeleniumLibrary">
+<msg timestamp="20210907 22:56:54.804" level="FAIL">No keyword with name 'SeleniumLibrary' found.</msg>
+<status status="FAIL" starttime="20210907 22:56:54.804" endtime="20210907 22:56:54.804"/>
+</kw>
+<status status="FAIL" starttime="20210907 22:56:54.804" endtime="20210907 22:56:54.804">No keyword with name 'SeleniumLibrary' found.</status>
+</test>
+<test id="s1-t3" name="Observe user is able to test sanity flow">
+<tag>regression</tag>
+<tag>sanity</tag>
+<status status="FAIL" starttime="20210907 22:56:54.804" endtime="20210907 22:56:54.804">Test case contains no keywords.</status>
+</test>
+<test id="s1-t4" name="Observe user is able to test regression flow">
+<tag>regression</tag>
+<status status="FAIL" starttime="20210907 22:56:54.820" endtime="20210907 22:56:54.820">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20210907 22:56:43.464" endtime="20210907 22:56:54.820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">regression</stat>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
